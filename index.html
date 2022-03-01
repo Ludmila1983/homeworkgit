@@ -6,34 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1 {
+                
+        .head .color{
+            background-color: white;
             font-size: 20px;
-            width: 25%;
+            width: auto;
             height: 100%;
-            border: 3px solid rgb(212, 71, 15);
+            border: 3px solid rgb(247, 84, 43);
+            border-radius: 5px;
             padding: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            /* margin: 15px; */
         }
-        nav {
+        .head {
+            background-color: rgba(110, 210, 228, 0.2);
+            border: 3px solid rgb(110, 210, 228);
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        .zalivka {
+            background-color: rgba(110, 210, 228, 0.2);
+            border: 3px solid rgb(110, 210, 228);
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        .zalivka .navig {
             font-size: 15px;
             background-color: rgba(211, 175, 216, 0.1);
-            width: 25%;
+            width: auto;
             height: 100%;
             border: 3px solid rgb(106, 72, 226);
+            border-radius: 5px;
             padding: 15px;
 
         }
-        p { font-size: 15px;
-            width: 25%;
-            height: 100%;
-            border: 3px solid rgb(216, 58, 155);
-            padding: 10px;  
-        }
-        .navyk {
+        .first{
             font-size: 15px;
             background-color: rgba(211, 175, 216, 0.1);
-            width: 25%;
+            width: auto;
             height: 100%;
-            border: 2px solid rgb(106, 72, 226);
+            border: 3px solid rgb(106, 72, 226);
+            border-radius: 5px;
+            padding: 15px;
+
+        }
+
+        
+        .zalivka .first p {
+            background-color: white;
+            font-size: 15px;
+            width: auto;
+            height: 100%;
+            border: 3px solid rgb(216, 58, 155);
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;  
+        }
+        .second .navyk {
+            font-size: 15px;
+            background-color: rgba(211, 175, 216, 0.1);
+            width: auto;
+            height: 100%;
+            border: 3px solid rgb(106, 72, 226);
+            border-radius: 5px;
             padding: 10px;   
         } 
         .fotter {
@@ -42,19 +80,23 @@
             width: 25%;
             height: 100%;
             border: 2px solid rgb(110, 210, 228);
+            border-radius: 5px;
             padding: 10px;   
         }
 
     </style>
 </head>
 <body>
-    <div>
-        <h1>Сайт начинающего верстальщика</h1>
-    </div>
-    <nav>
+    <header class="head">
+        <h1 class="color">Сайт начинающего верстальщика</h1>
+    </header>
+    <br>
+<main class="zalivka">
+    <nav class="navig">
         Навигация
     </nav>
-    <section>
+    <br>
+    <section class="first">
         <p>
         Всем привет! Добро пожаловать на мой первый сайт. Ещё недавно я понятия не имел, кто такой верстальщик, а теперь я нашел интерактивные курсы по HTML и CSS и поставил перед собой цель - стать им. У меня даже появился инструктор-Кекс, который не позволит мне расслабитьсяи будет следить за моими успехами -Кекс, который не позволит мне расслабиться и будет следить за моими успехами.
         </p>
@@ -62,10 +104,12 @@
             Мое первое задание - вести дневник и честно писать обо всех свои свершениях
         </p>
     </section>
-    <section>
+    <section class="second">
         <p class="navyk">Раздел про навыки</p>
         
     </section>
+</main>
+    
     <div>
         <p class="fotter">
             Подвал сайта
