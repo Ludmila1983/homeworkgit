@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    grid-template-columns: 1100px 100px 100px 100px 100px;
+}
+.maincontainer{
+    display: grid;
+    grid-template-columns: 20px 845px 300px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li{
+    list-style: none;
+}

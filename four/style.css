@@ -1,0 +1,38 @@
+@font-face {
+        font-family: "SansitaSwashed";
+        src: url('/fonts/SansitaSwashed-VariableFont_wght.woff') format('woff');
+        }
+h1{
+    font-family: SansitaSwashed;
+    }
+/*  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Sansita+Swashed:wght@700&display=swap');
+ */
+    h1{
+        /* font-family: 'Sansita Swashed' */
+        text-align: center;
+        font-size: 20px;
+    }
+    p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: left;
+        font-size: 12px;
+        
+    }
+    .bold{
+        font-weight: 900;
+            }
+
+
+    ol .first{
+        list-style-type:decimal ;
+    }
+
+  /*   li{
+    text-indent: -5px; 
+    } */
+    .second, .third, .four{
+        list-style-type: lower-alpha; 
+    
+    }
+    
+    

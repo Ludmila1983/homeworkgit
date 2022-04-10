@@ -1,0 +1,79 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows:50px 150px 50px 50px 50px 50px;
+    /* border: 2px solid red; */
+    justify-content: center;
+    color:white;
+    grid-template-areas: 
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main . image"
+    "main main . extra"
+    "banner banner banner banner";
+}
+
+*{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+header, nav, .hero, main, .banner, .extra, .image, .toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: black;
+   /*  grid-column: 1/2; */
+grid-area: header;
+    
+}
+nav{
+    background-color:red;
+    /* grid-column: 2/5; */
+    grid-area: menu;
+    }
+.hero{
+    background-color: rgb(178, 178, 230);
+    /* grid-column: 1/5; */
+    grid-area: hero;
+
+    
+}
+main{
+    background-color:blue;
+/*  grid-column: 1/3;
+    grid-row: 3/5; */
+    grid-area: main;
+    
+}
+.banner{
+    background-color: yellow;
+    /* grid-column: 4/5;
+    grid-row: 3/4; */
+    grid-area: banner;
+
+}
+.extra{
+    background-color: green;
+    /* grid-column: 4/5;
+    grid-row: 4/5; */
+    grid-area: extra;
+}
+.image{
+    background-color: rgb(229, 229, 234);
+    /* grid-column: 1/5;
+    grid-row: 5/6; */
+    grid-area: image;
+    
+}
+.toolbar{
+    background-color: rgb(167, 161, 161);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end:6;
+    filter: opacity(70%);
+}
